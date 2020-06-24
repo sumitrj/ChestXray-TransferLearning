@@ -152,7 +152,7 @@ def test(yt,yp,th=0.5):
         
 # Load trained Neural Network Model
 net = ResNet18(4,False).cuda()
-net.load_state_dict(torch.load('../Models/Model42(1).pth.tar'))
+net.load_state_dict(torch.load('../Models/Model4b.pth.tar'))
 
 # Load Random Forest Classifier trained Model
 clf = pickle.load(open('../Models/ML1.sav', 'rb'))
