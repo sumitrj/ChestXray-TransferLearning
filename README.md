@@ -24,7 +24,7 @@ Make a directory 'input' in workspace:
 
 	mkdir input
 
-Inside the input directory,make directories for the indivdual datasets, download the datasets and unzip them.
+Inside the input directory, make directories for the indivdual datasets, download the datasets and unzip them.
 	
 	cd input
 	mkdir covid19-radiography-database rsna-pneumonia-detection-challenge chest-xray-pneumonia data 
