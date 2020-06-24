@@ -50,6 +50,24 @@ Inside the input directory,make directories for the indivdual datasets, download
 
 **Clone this repository outside the 'input' directory in the 'workspace' directory**
 
+**Contents of the repository:**
+
+**a) Mets**
+Contains csv files of metadata. Each file has a dataframe with the columns 'Index', 'filename', 'label 1', 'label 2', 'label 3'...
+For a given row, 
+**filename** specifies the filename of a particular image. It could be just the title of the image or in some cases, the location of the image w.r.t the **Scripts** directory.
+**'label 1', 'label 2', 'label 3'**  give the onehot encoded label vector for the image.
+
+**b) Scripts**
+Has python scripts to geerate metadata files, train and validate Deep Learning and Machine Learning models.
+
+**c) Models**
+Has the Deep Learning (PyTorch Models .pth.tar) and Machine Learning models (.sav)
+
+**d) Losses**
+Has csv files of training loss decay trends for deep learning models and classification report
+
+
 ## Compiling Metadata
 
 The Metadata has been compiled into csv files and placed in the 'Mets' directory. It has been obtained from various sources mentioned above. Since the problem is very recent, the owners of the above mentioned repositories have been channging the content from time to time. We have begun solving the problem from around 3 months, hence there might be slight changes when you run the program which generates the Metatdata files. The following lets you generates the files as per requirement.
@@ -74,7 +92,7 @@ Data of Pneumonia positive Chest X-ray (CXR) images and Normal CXR images.
 Data of COVID-19 positive CXR images,  Viral Pneumonia positive CXR images, Bacterial Pneumonia positive CXR images and Normal CXR images.
 	
 	Train: 84 CXR images each for classes COVID-19, Viral pneumonia,Bacterial pneumonia and Normal
-	Test: 43 CXR images each for classes COVID-19, Viral pneumonia,Bacterial pneumonia and Normal
+	Test: 44 CXR images each for classes COVID-19, Viral pneumonia,Bacterial pneumonia and Normal
 
 **c) Dataset3:**
 Data of Pneumonia positive CXR images, CXR images positive of 14 diseases and Normal CXR images.
@@ -82,16 +100,16 @@ Data of Pneumonia positive CXR images, CXR images positive of 14 diseases and No
 	Train: 2800 CXR images of Pneumonia, 5600 CXR images of Normal, 5600 CXR images of Other diseases from CXR14 
 	Test: 1075 CXR images of Pneumonia, 2150 CXR images of Normal, 2150 CXR images of Other diseases from CXR14
 
-**d) Dataset4:**
+**d) Dataset4a:**
+Data of COVID-19 positive CXR images, Pneumonia positive CXR images, and CXR images positive of 14 diseases and Normal CXR images.
+
+	Train: 242 CXR images each of Pneumonia, Normal, Other diseases, COVID-19 labels
+	
+**e) Dataset4b:**
 Data of COVID-19 positive CXR images, Pneumonia positive CXR images, and CXR images positive of 14 diseases and Normal CXR images.
 
 	Train: 1000 CXR images each of Pneumonia, Normal and Other diseases, 321 COVID-19 positive CXR images 
 	Test (FinalTest): 50 CXR images each of Pneumonia, Normal and Other diseases, 25 COVID-19 positive CXR images
-
-**e) ML Train Dataset:**
-Data of COVID-19 positive CXR images, Pneumonia positive CXR images, and CXR images positive of 14 diseases and Normal CXR images.
-
-	Train: 242 CXR images each of Pneumonia, Normal, Other diseases, COVID-19 labels 
 
 ## Training ResNet18 Model to build a feature extractor:
 
@@ -114,14 +132,12 @@ Entering 1 here will ask you for the path of the model which is to be used as ba
 
 **Enter 0 here and press enter for all of the parts**
 
-
 You'll be then prompted to enter Model Name and Number of epochs.
 
 	Enter Model Name: Modelx <example>
 	Enter Number of epochs: 700 <example>
 
 After execution, a file named 'ModelxLosses.csv'(example) will be stored in the 'Losses' directory and a file named 'Modelx.pth.tar' will be stored in 'Models' directory.
-
 
 
 ### Part 1: Training over Dataset1
@@ -132,115 +148,56 @@ Run the script 'Train1.py' from the 'Scripts' directory to obtain the model. Ent
 
 ### Part 2: Training Over Dataset 2
 
-We use Model1 as base model to build a classifier of CXR images into labels 'COVID-19', 'Other Pneumonia' and 'Normal'. The model trains for 120 epochs with ReLU Activation function,  Adam Optimizer and WCAC Loss Function. 
+We use Model1 as base model to build a classifier of CXR images into labels 'COVID-19', 'Other Pneumonia' and 'Normal'. The model trains for 190 epochs with ReLU Activation function,  Adam Optimizer and WCAC Loss Function. 
 
-Run the script 'Train2.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model2 for model name and 120 for number of epochs. This generates Model2.pth.tar in 'Models' directory and and 'Model2Losses.csv' in Losses Directory.
+Run the script 'Train2.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model2 for model name and 190 for number of epochs. This generates Model2.pth.tar in 'Models' directory and and 'Model2Losses.csv' in Losses Directory.
 
 ### Part 3: Training Over Dataset 3
 
-We use Model2 as base model to build a classifier of CXR images into labels 'Other diseases', 'Pneumonia' and 'Normal'. The model trains for *????* 120 epochs with ReLU Activation function, Adam Optimizer and WCAC Loss Function. 
+We use Model2 as base model to build a classifier of CXR images into labels 'Other diseases', 'Pneumonia' and 'Normal'. The model trains for 400 epochs with ReLU Activation function, Adam Optimizer and WCAC Loss Function. 
 
-Run the script 'Train3.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model2 for model name and 120 for number of epochs. This generates Model3.pth.tar in 'Models' directory and and 'Model3Losses.csv' in Losses Directory.
+Run the script 'Train3.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model3 for model name and 400 for number of epochs. This generates Model3.pth.tar in 'Models' directory and and 'Model3Losses.csv' in Losses Directory.
 
-### Part 4: Training Over Dataset 4
+### Part 4a: Training Over Dataset 4a
 
-We use Model3 as base model to build a classifier of CXR images into labels 'Other diseases', 'Pneumonia' and 'Normal'. The model trains for *????* 120 epochs with ReLU Activation function, Adam Optimizer and WCAC Loss Function. 
+We use Model3 as base model to build a classifier of CXR images into labels 'COVID-19', 'Pneumonia', 'Other diseases', and 'Normal'. The model trains for 290 epochs with ReLU Activation function, Adam Optimizer and WCAC Loss Function. 
 
-Run the script 'Train3.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model2 for model name and 120 for number of epochs. This generates Model4.pth.tar in 'Models' directory and and 'Model4Losses.csv' in Losses Directory.
+Run the script 'Train4a.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model4a for model name and 290 for number of epochs. This generates Model4a.pth.tar in 'Models' directory and and 'Model4aLosses.csv' in Losses Directory.
 
-On running the script, the following will prompt:
+### Part 4b: Training Over Dataset 4b
 
-	Load Trained? 0
-Entering 0 here will load Model1 as basemodel.
-Entering 1 here will ask you for the path of the model which is to be used as basemodel.
+We use Model4a as base model to build a classifier of CXR images into labels 'Other diseases', 'Pneumonia' and 'Normal'. The model trains for 250 epochs with ReLU Activation function, Adam Optimizer and WGCAC Loss Function.
 
-	Load Trained? 1
-	Enter Base Model Path: ../Models/<BaseModelname>.pth.tar
+Run the script 'Train4b.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model4b for model name and 250 for number of epochs. This generates Model4b.pth.tar in 'Models' directory and and 'Model4bLosses.csv' in Losses Directory.
 
-**Enter 0 here and press enter.**
-You'll be then prompted to enter Model Name and Number of epochs.
-
-	Enter Model Name: Model2
-	Enter Number of epochs: 120
-
-After execution, a file named 'Model2Losses.csv' will be stored in the 'Losses' directory and a file named 'Model2.pth.tar' will be stored in 'Models' directory.
-
-### Part 3:
-### Part 4:
-
-## Building the Classifier
+## Training the Classifier
+Random Forest classifier is trained over the features extracted by Model4b.
+Run the following in the 'Scripts' directory:
+	
+	python3 ML1train.py
+On completion a file 'ML1.sav' will be generated in the 'Models' directory which stores the Random Forest Classifier Model
 
 ## Evaluating Model performance on Test Data
+Run the following in the 'Scripts' directory:
+	
+	python3 ML1test.py
+On completion a file 'ML1test_eval.csv' will be generated in the 'Losses' directory which has the evaluation parameters for the classifier.
 
+## Results:
 
+	COVID-19 vs Pneumonia:
+	TP           23.000000
+	TN           47.000000
+	FP            1.000000
+	FN            2.000000
+	Precision     0.958333
+	Recall        0.920000
+	F1            0.938776
 
-## Contents of the repository
-
-
-**a) Mets**
-Contains csv files of metadata. Each file has a dataframe with the columns 'Index', 'filename', 'label 1', 'label 2', 'label 3'...
-For a given row, 
-**filename** specifies the filename of a particular image. It could be just the title of the image or in some cases, the location of the image w.r.t the **Scripts** directory.
-**'label 1', 'label 2', 'label 3'**  give the onehot encoded label vector for the image.
-
-**b) Scripts**
-Has python scripts to train and validate Deep Learning and Machine Learning models.
-
-**c) Models**
-Has the Deep Learning (PyTorch Models .pth.tar) and Machine Learning models (.sav)
-
-**d) Losses**
-Has csv files of training loss decay trends for deep learning models
-
-## Datasets used:
-
-
-## Building Feature Extractor
-Considering the lack of data, we use multi-channel transfer learning to build feature extractor. We have used the ResNet18 architecture because it has low training loss and is less intensive computationally.
-
-**a) Training over Dataset1:**
-
-### Proposed Novel Loss Function
-
-**b) Training over Dataset2:**
-
-
-
-**c) Training over Dataset3:**
-In order to train the model to classify into COVID-19 and various other images, it needs to learn to extract features present in CXR images positive of other diseases. We use Model2 as basemodel to build a classifier of CXR images to classify into Pneumonia, Normal and Others.
-The model trains for 400 epochs with ReLU Activation function,  Adam Optimizer and WGCAC Loss Function. 
-Run the script 'Train3.py' from the 'Scripts' directory to obtain the model.
-
-On running the script, the following will prompt:
-
-	Load Trained? 0
-Entering 0 here will load Model2 as basemodel.
-Entering 1 here will ask you for the path of the model which is to be used as basemodel.
-
-	Load Trained? 1
-	Enter Base Model Path: ../Models/<BaseModelname>.pth.tar
-
-**Enter 0 here and press enter.**
-You'll be then prompted to enter Model Name and Number of epochs.
-
-	Enter Model Name: Model3
-	Enter Number of epochs: 400
-
-After execution, a file named 'Model3Losses.csv' will be stored in the 'Losses' directory and a file named 'Model3.pth.tar' will be stored in 'Models' directory.
-
-## Building Classifiers
-
-**a) Classification of CXR images into {COVID-19} or {non-COVID-19-pneumonia + Normal}.**
-We use the features extracted by Model3 to train a Random Forest classifier. 
-Run the script ML1train.py to train the Random Forest Classifier. 
-After execution, a file named 'ML1.sav' will be stored in 'Models' Directory.
-
-**b) Classification of CXR images into {COVID-19} or {non-COVID-19  + Normal}.**
-
-**c) Classification of CXR images into {Normal} or {Abnormal}.**
-    
-
-## Analyzing Training Loss decay trends 
-
-
-## Evaluating Predictor Performance
+	TP           23.000000
+	TN           47.000000
+	FP            4.000000
+	FN            2.000000
+	Precision     0.851852
+	Recall        0.920000
+	F1            0.884615
