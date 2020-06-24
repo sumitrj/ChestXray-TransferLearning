@@ -122,7 +122,7 @@ DL = dl(df,'')
 
 # Load Network
 net = ResNet18(4,False).cuda()
-net.load_state_dict(torch.load('../Models/Model42(1).pth.tar'))
+net.load_state_dict(torch.load('../Models/Model4b.pth.tar'))
 
 # Train Model
 X = genx(net,DL)
