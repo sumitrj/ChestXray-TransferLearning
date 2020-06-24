@@ -194,6 +194,7 @@ On completion a file 'ML1test_eval.csv' will be generated in the 'Losses' direct
 	Recall        0.920000
 	F1            0.938776
 
+	COVID-19 vs non-Pneumonia-CX14 diseases:
 	TP           23.000000
 	TN           47.000000
 	FP            4.000000
