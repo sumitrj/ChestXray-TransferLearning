@@ -170,7 +170,8 @@ We use Model4a as base model to build a classifier of CXR images into labels 'Ot
 
 Run the script 'Train4b.py' from the 'Scripts' directory to obtain the model. Enter 0 for Load Trained, Model4b for model name and 250 for number of epochs. This generates Model4b.pth.tar in 'Models' directory and and 'Model4bLosses.csv' in Losses Directory.
 
-**Intermediate models Model1.pth.tar and Model3.pth.tar have been removed to bring total repository size under 100MB** 
+**Intermediate models Model1.pth.ta, Model4a.pth.tar and Model3.pth.tar have been removed to bring total repository size under 100MB** 
+**Final model, i.e Model4b.pth.tar is still present**
 
 ## Training the Classifier
 Random Forest classifier is trained over the features extracted by Model4b.
