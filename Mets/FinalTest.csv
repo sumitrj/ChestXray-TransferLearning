@@ -1,0 +1,173 @@
+,filename,Normal,Others,Pneumonia,COVID-19
+0,../../input/data/images_001/images/00000522_001.png,1,0,0,0
+1,../../input/data/images_001/images/00000522_002.png,1,0,0,0
+2,../../input/data/images_001/images/00000522_003.png,1,0,0,0
+3,../../input/data/images_001/images/00000522_004.png,1,0,0,0
+4,../../input/data/images_001/images/00000522_005.png,1,0,0,0
+5,../../input/data/images_001/images/00000523_000.png,1,0,0,0
+6,../../input/data/images_001/images/00000524_000.png,1,0,0,0
+7,../../input/data/images_001/images/00000525_000.png,1,0,0,0
+8,../../input/data/images_001/images/00000526_000.png,1,0,0,0
+9,../../input/data/images_001/images/00000526_001.png,1,0,0,0
+10,../../input/data/images_001/images/00000527_000.png,1,0,0,0
+11,../../input/data/images_001/images/00000530_000.png,1,0,0,0
+12,../../input/data/images_001/images/00000531_001.png,1,0,0,0
+13,../../input/data/images_001/images/00000531_003.png,1,0,0,0
+14,../../input/data/images_001/images/00000531_004.png,1,0,0,0
+15,../../input/data/images_001/images/00000531_005.png,1,0,0,0
+16,../../input/data/images_001/images/00000531_006.png,1,0,0,0
+17,../../input/data/images_001/images/00000532_000.png,1,0,0,0
+18,../../input/data/images_001/images/00000533_000.png,1,0,0,0
+19,../../input/data/images_001/images/00000533_003.png,1,0,0,0
+20,../../input/data/images_001/images/00000534_000.png,1,0,0,0
+21,../../input/data/images_001/images/00000534_001.png,1,0,0,0
+22,../../input/data/images_001/images/00000535_000.png,1,0,0,0
+23,../../input/data/images_001/images/00000538_000.png,1,0,0,0
+24,../../input/data/images_001/images/00000538_001.png,1,0,0,0
+25,../../input/data/images_001/images/00000538_003.png,1,0,0,0
+26,../../input/data/images_001/images/00000538_004.png,1,0,0,0
+27,../../input/data/images_001/images/00000538_005.png,1,0,0,0
+28,../../input/data/images_001/images/00000539_000.png,1,0,0,0
+29,../../input/data/images_001/images/00000540_000.png,1,0,0,0
+30,../../input/data/images_001/images/00000540_002.png,1,0,0,0
+31,../../input/data/images_001/images/00000541_000.png,1,0,0,0
+32,../../input/data/images_001/images/00000541_001.png,1,0,0,0
+33,../../input/data/images_001/images/00000541_002.png,1,0,0,0
+34,../../input/data/images_001/images/00000541_003.png,1,0,0,0
+35,../../input/data/images_001/images/00000541_004.png,1,0,0,0
+36,../../input/data/images_001/images/00000542_000.png,1,0,0,0
+37,../../input/data/images_001/images/00000542_001.png,1,0,0,0
+38,../../input/data/images_001/images/00000544_000.png,1,0,0,0
+39,../../input/data/images_001/images/00000545_002.png,1,0,0,0
+40,../../input/data/images_001/images/00000545_003.png,1,0,0,0
+41,../../input/data/images_001/images/00000545_005.png,1,0,0,0
+42,../../input/data/images_001/images/00000545_006.png,1,0,0,0
+43,../../input/data/images_001/images/00000545_007.png,1,0,0,0
+44,../../input/data/images_001/images/00000545_008.png,1,0,0,0
+45,../../input/data/images_001/images/00000545_010.png,1,0,0,0
+46,../../input/data/images_001/images/00000546_000.png,1,0,0,0
+47,../../input/data/images_001/images/00000547_000.png,1,0,0,0
+48,../../input/data/images_004/images/00008745_039.png,0,1,0,0
+49,../../input/data/images_004/images/00008291_004.png,0,1,0,0
+50,../../input/data/images_003/images/00004808_008.png,0,1,0,0
+51,../../input/data/images_006/images/00012625_006.png,0,1,0,0
+52,../../input/data/images_003/images/00005916_004.png,0,1,0,0
+53,../../input/data/images_009/images/00019550_005.png,0,1,0,0
+54,../../input/data/images_003/images/00004176_002.png,0,1,0,0
+55,../../input/data/images_008/images/00016175_000.png,0,1,0,0
+56,../../input/data/images_004/images/00007482_006.png,0,1,0,0
+57,../../input/data/images_005/images/00010007_038.png,0,1,0,0
+58,../../input/data/images_002/images/00002668_006.png,0,1,0,0
+59,../../input/data/images_002/images/00002072_012.png,0,1,0,0
+60,../../input/data/images_007/images/00014203_043.png,0,1,0,0
+61,../../input/data/images_004/images/00007624_024.png,0,1,0,0
+62,../../input/data/images_006/images/00012834_012.png,0,1,0,0
+63,../../input/data/images_009/images/00019763_000.png,0,1,0,0
+64,../../input/data/images_007/images/00014613_001.png,0,1,0,0
+65,../../input/data/images_004/images/00006736_007.png,0,1,0,0
+66,../../input/data/images_007/images/00014149_030.png,0,1,0,0
+67,../../input/data/images_004/images/00007138_011.png,0,1,0,0
+68,../../input/data/images_003/images/00005684_002.png,0,1,0,0
+69,../../input/data/images_007/images/00014125_013.png,0,1,0,0
+70,../../input/data/images_009/images/00020159_001.png,0,1,0,0
+71,../../input/data/images_004/images/00007223_001.png,0,1,0,0
+72,../../input/data/images_004/images/00007007_017.png,0,1,0,0
+73,../../input/data/images_007/images/00013849_006.png,0,1,0,0
+74,../../input/data/images_006/images/00012779_001.png,0,1,0,0
+75,../../input/data/images_006/images/00013111_110.png,0,1,0,0
+76,../../input/data/images_005/images/00011131_000.png,0,1,0,0
+77,../../input/data/images_005/images/00011495_000.png,0,1,0,0
+78,../../input/data/images_009/images/00020703_035.png,0,1,0,0
+79,../../input/data/images_008/images/00016516_000.png,0,1,0,0
+80,../../input/data/images_007/images/00014616_013.png,0,1,0,0
+81,../../input/data/images_006/images/00013615_024.png,0,1,0,0
+82,../../input/data/images_008/images/00016587_079.png,0,1,0,0
+83,../../input/data/images_008/images/00016972_025.png,0,1,0,0
+84,../../input/data/images_002/images/00002359_009.png,0,1,0,0
+85,../../input/data/images_002/images/00001358_001.png,0,1,0,0
+86,../../input/data/images_006/images/00012746_002.png,0,1,0,0
+87,../../input/data/images_003/images/00005195_000.png,0,1,0,0
+88,../../input/data/images_008/images/00016207_006.png,0,1,0,0
+89,../../input/data/images_006/images/00012018_013.png,0,1,0,0
+90,../../input/data/images_008/images/00017207_019.png,0,1,0,0
+91,../../input/data/images_009/images/00019356_000.png,0,1,0,0
+92,../../input/data/images_006/images/00012141_021.png,0,1,0,0
+93,../../input/data/images_008/images/00016772_004.png,0,1,0,0
+94,../../input/data/images_008/images/00017783_000.png,0,1,0,0
+95,../../input/data/images_003/images/00006481_018.png,0,1,0,0
+96,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1372_bacteria_3499.jpeg,0,0,1,0
+97,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person3_bacteria_12.jpeg,0,0,1,0
+98,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person55_bacteria_265.jpeg,0,0,1,0
+99,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1636_bacteria_4338.jpeg,0,0,1,0
+100,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1679_bacteria_4450.jpeg,0,0,1,0
+101,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person270_virus_555.jpeg,0,0,1,0
+102,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1816_bacteria_4674.jpeg,0,0,1,0
+103,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person400_virus_794.jpeg,0,0,1,0
+104,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person870_virus_1516.jpeg,0,0,1,0
+105,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person642_virus_1223.jpeg,0,0,1,0
+106,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person48_bacteria_233.jpeg,0,0,1,0
+107,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1344_virus_2320.jpeg,0,0,1,0
+108,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person305_bacteria_1437.jpeg,0,0,1,0
+109,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person490_bacteria_2068.jpeg,0,0,1,0
+110,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person493_bacteria_2086.jpeg,0,0,1,0
+111,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1085_virus_1797.jpeg,0,0,1,0
+112,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1430_bacteria_3693.jpeg,0,0,1,0
+113,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1089_bacteria_3029.jpeg,0,0,1,0
+114,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person988_bacteria_2915.jpeg,0,0,1,0
+115,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person793_virus_1424.jpeg,0,0,1,0
+116,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person464_bacteria_1975.jpeg,0,0,1,0
+117,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person59_bacteria_279.jpeg,0,0,1,0
+118,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1158_virus_1943.jpeg,0,0,1,0
+119,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1475_virus_2558.jpeg,0,0,1,0
+120,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person616_bacteria_2487.jpeg,0,0,1,0
+121,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person364_bacteria_1656.jpeg,0,0,1,0
+122,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person95_virus_177.jpeg,0,0,1,0
+123,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1398_virus_2401.jpeg,0,0,1,0
+124,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1502_bacteria_3922.jpeg,0,0,1,0
+125,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person867_bacteria_2789.jpeg,0,0,1,0
+126,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person274_bacteria_1290.jpeg,0,0,1,0
+127,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person439_bacteria_1895.jpeg,0,0,1,0
+128,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person75_bacteria_367.jpeg,0,0,1,0
+129,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1309_virus_2254.jpeg,0,0,1,0
+130,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person70_bacteria_343.jpeg,0,0,1,0
+131,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person25_bacteria_113.jpeg,0,0,1,0
+132,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person583_bacteria_2406.jpeg,0,0,1,0
+133,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person940_virus_1607.jpeg,0,0,1,0
+134,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1855_bacteria_4727.jpeg,0,0,1,0
+135,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person525_bacteria_2216.jpeg,0,0,1,0
+136,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person506_bacteria_2138.jpeg,0,0,1,0
+137,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person124_virus_249.jpeg,0,0,1,0
+138,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1268_bacteria_3227.jpeg,0,0,1,0
+139,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1481_bacteria_3868.jpeg,0,0,1,0
+140,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person475_bacteria_2023.jpeg,0,0,1,0
+141,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person738_bacteria_2641.jpeg,0,0,1,0
+142,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person1272_virus_2190.jpeg,0,0,1,0
+143,../../input/chest-xray-pneumonia/chest_xray/train/PNEUMONIA/person51_bacteria_240.jpeg,0,0,1,0
+144,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (108).png,0,0,0,1
+145,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(184).png,0,0,0,1
+146,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(175).png,0,0,0,1
+147,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (75).png,0,0,0,1
+148,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (21).png,0,0,0,1
+149,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(137).png,0,0,0,1
+150,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (116).png,0,0,0,1
+151,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(194).png,0,0,0,1
+152,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(203).png,0,0,0,1
+153,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(193).png,0,0,0,1
+154,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (88).png,0,0,0,1
+155,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (16).png,0,0,0,1
+156,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(195).png,0,0,0,1
+157,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (11).png,0,0,0,1
+158,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(210).png,0,0,0,1
+159,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (40).png,0,0,0,1
+160,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (98).png,0,0,0,1
+161,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (115).png,0,0,0,1
+162,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(144).png,0,0,0,1
+163,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (123).png,0,0,0,1
+164,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(135).png,0,0,0,1
+165,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19(173).png,0,0,0,1
+166,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (120).png,0,0,0,1
+167,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (83).png,0,0,0,1
+168,../../input/covid19-radiography-database/COVID-19 Radiography Database/COVID-19/COVID-19 (117).png,0,0,0,1
+,../../input/data/images_004/images/00007624_024.png,0,1,0,0
+,../../input/data/images_004/images/00006976_000.png,0,1,0,0
+,../../input/data/images_009/images/00019647_005.png,0,1,0,0
