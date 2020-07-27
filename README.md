@@ -1,6 +1,6 @@
 # Chest X-ray Transfer Learning
 
-It can be often a very difficult task to work on small datasets for image classification tasks. These fall in the class of Few-shot-learning problems. 
+It can often be a very difficult task to work on small datasets for image classification tasks. These fall in the class of Few-shot-learning problems. 
 A popular approach to the same is using transfer learning.
 For someone new to it, it can be very confusing to write code from scratch and evaluate. 
 
