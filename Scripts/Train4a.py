@@ -103,52 +103,24 @@ class ResNet18(nn.Module):
     
 # Define Loss Function
 
-def dla(yp,yt):
-    return F.mse_loss(yp,yt)*len(yp)
-    
-def sumc(l):
-    u = 0*l[0]
-    for i in l:
-        u+=i
-    return u
-
-def genw(df_train):
-    s = max([len(df_train[df_train[i]==1]) for i in df_train.columns[1:]])
-    W = (np.array([len(df_train[df_train[i]==1]) for i in df_train.columns[1:]])/s)**(-1)
-    W = W/np.max(W)
-    wd = dict(zip(np.arange(len(df_train.columns[1:])),W))
-    return wd
-    
-def genc(n):
-    z = []
-    for i in range(n):
-        u = torch.zeros(n).cuda()
-        u[i]=1
-        z.append(u)
-    return z
-    
+"""
+We have udeveloped and proposed novel uncertainty based loss functions which has resulted in fast training and accuracte predictions.
+We won't disclose the functions
+Similar to definition of the Network class, different mathematical constructs can be used in the myLoss class definition
+"""
 class Loss1(nn.Module):
     
-    def __init__(self,alf,lam,n=4,sig=1.5,a=2):
+    def __init__(self,alf,lam,n=3,sig=1.5,a=1.5):
       
         super(Loss1, self).__init__()
-        self.C = genc(n)
-        self.alf = alf
-        self.lam = lam
-        self.sig = sig
-        self.a = a
-        self.w0 = genw(df)
+        # Define your variables here
         
     def forward(self,yp,yt):
         
-        #La = torch.sum(self.a*torch.exp( ((yp - yt)/self.sig)**2 ))
-        La = dla(yp,self.alf*yt)
-        Lt = torch.log(1+sumc([torch.exp( La - dla(yp,self.alf*i)) for i in self.C ]))
-        L = Lt + self.lam*La
-        L = L*self.w0[torch.argmax(yt).item()]
-        if(L<1.5):
-            L = L*1.8
-        return 1.5*L
+        # Enter all the computational instructions here
+        #Dummy line
+        L = torch.sum(torch.abs(yp-yt))
+        return L
 
 # Define Train Function
 
