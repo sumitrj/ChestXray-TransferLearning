@@ -74,39 +74,27 @@ class ResNet18(nn.Module):
 
 # Define Loss Function
 
-def dla(yp,yt):
-    return F.mse_loss(yp,yt)*len(yp)
+"""
+We have udeveloped and proposed novel uncertainty based loss functions which has resulted in fast training and accuracte predictions.
+We won't disclose the functions
+Similar to definition of the Network class, different mathematical constructs can be used in the myLoss class definition
+"""
     
-def sumc(l):
-    u = 0*l[0]
-    for i in l:
-        u+=i
-    return u
-
-def genc(n):
-    z = []
-    for i in range(n):
-        u = torch.zeros(n).cuda()
-        u[i]=1
-        z.append(u)
-    return z
-    
-class CAC(nn.Module):
+class myLoss(nn.Module):
     
     def __init__(self,alf,lam,n=15):
       
-        super(Loss1, self).__init__()
-        self.C = genc(n)
-        self.alf = alf
-        self.lam = lam
+        super(myLoss, self).__init__()
+        
+        # Define your variables here
         
     def forward(self,yp,yt):
         
-        La = dla(yp,self.alf*yt)
-        Lt = torch.log(1+sumc([torch.exp( La - dla(yp,self.alf*i)) for i in self.C ]))
-        L = Lt + self.lam*La
-        if(L<1.5):
-            L = 1.8*L
+        # Enter all the computational instructions here
+        
+        #Dummy line
+        L = torch.sum(torch.abs(yp-yt))
+
         return L
 
 # Define Training Function
@@ -114,8 +102,8 @@ class CAC(nn.Module):
 def train(n_epochs,Model):
     
     epoch_mse_losses = []
-    epoch_cac_losses = []
-    criterion = CAC(1,0.9)
+    epoch_myLoss_losses = []
+    criterion = myLoss()
     mse = nn.MSELoss()
     
     optimizer = torch.optim.Adam(Model.parameters(), lr=0.01,weight_decay=0.001)
@@ -126,12 +114,12 @@ def train(n_epochs,Model):
         print('Starting epoch: ', i+1)
         print()
         epoch_mse_loss = 0
-        epoch_cac_loss = 0
+        epoch_myLoss_loss = 0
         
         for u,(j,k)in enumerate(TrainLoader3):
             
             batch_mse = 0
-            batch_cac = 0
+            batch_myLoss = 0
             optimizer.zero_grad()
             
             for batch_index in range(5):
@@ -141,27 +129,27 @@ def train(n_epochs,Model):
 
                 output = Model(Image)[0]                
                 
-                cac_loss = criterion(output, Labels) 
+                myLoss_loss = criterion(output, Labels) 
                 mse_loss = mse(output, Labels).item()
-                batch_cac+=cac_loss
+                batch_myLoss+=myLoss_loss
                 batch_mse+=mse_loss
             
-            mean_batch_cac = batch_cac/5
+            mean_batch_myLoss = batch_myLoss/5
             mean_batch_mse = batch_mse/5
        
-            mean_batch_cac.backward()
+            mean_batch_myLoss.backward()
             optimizer.step()
             
         epoch_mse_loss = mean_batch_mse/u
-        epoch_cac_loss = (mean_batch_cac/u).item
+        epoch_myLoss_loss = (mean_batch_myLoss/u).item
         
         epoch_mse_losses.append(epoch_mse_loss)
-        epoch_cac_losses.append(epoch_cac_loss)
+        epoch_myLoss_losses.append(epoch_myLoss_loss)
         
         print('Epoch MSE Loss: ', epoch_mse_loss) 
-        print('Epoch CAC Loss: ', epoch_cac_loss)
+        print('Epoch myLoss Loss: ', epoch_myLoss_loss)
         
-    return epoch_cac_losses, epoch_mse_losses
+    return epoch_myLoss_losses, epoch_mse_losses
     
     
 # Load Metadata       
@@ -182,9 +170,9 @@ Net1 = Net.cuda()
 
 # Get Model title, number of epochs and train:
 model_title = input('Enter Model title: ')
-CAC, MSE = train(Net1,int(input('Enter Epochs: ')))
+MyLoss, MSE = train(Net1,int(input('Enter Epochs: ')))
 df = pd.DataFrame()
-df['CAC Loss'] = CAC
+df['MyLoss Loss'] = MyLoss
 df['MSE Loss'] = MSE
 df.to_csv('../Losses/' + model_title + 'Losses.csv')
 torch.save(Net1.state_dict(), '../Models/' + model_title + '.pth.tar')
