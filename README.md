@@ -1,4 +1,11 @@
-# WACV Paper 220 Supplementary Material
+# Chest X-ray Transfer Learning
+
+It can be often a very difficult task to work on small datasets for image classification tasks. These fall in the class of Few-shot-learning problems. 
+A popular approach to the same is using transfer learning.
+For someone new to it, it can be very confusing to write code from scratch and evaluate. 
+
+This is the code used for my Internship Project at Nvidia on detection of COVID-19 from Chest Xray images using transfer learning by proposing a detailed pipeline of datasets and novel uncertaintly based loss functions. The loss functions aren't mentioned in the code since they were completely proprietary.
+Other parts such as data pipelines, preprocessing and execution can be found in the repository.
 
 ## Setting up Environment
 
